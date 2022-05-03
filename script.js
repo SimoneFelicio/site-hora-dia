@@ -1,11 +1,12 @@
 function carregar(){
     var msg = window.document.getElementById('msg')
-    var imagem = window.document.getElementById('manha')
+    var imagem = window.document.getElementById('imagem')
     
     var atual = new Date()
     var hora = atual.getHours()
 
     msg.innerHTML = `Agora são ${hora} horas`
+    
     if (hora < 12){
         imagem.src = 'imagens/manha.png'
         document.body.style.background = '#D48138'
